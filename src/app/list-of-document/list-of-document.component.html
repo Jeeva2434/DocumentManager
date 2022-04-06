@@ -1,0 +1,20 @@
+
+
+
+<div class="list-section">
+	<div class="list-container">
+		<div *ngFor="let list of docPrint">		 
+			<div class="list-item">
+            <div class="list-head-flex">
+					    <h3>{{list.docName}}</h3>
+					    <div class="alter">
+						   <p><i class="fa-solid fa-pen-to-square"></i></p>
+						   <p (click)="delete(list)"><i class="fa-solid fa-trash-can"></i></p>
+					    </div>
+					  </div>
+					 <p>{{list.docDesc}}</p>
+					 <p class="doc"><a><i class="fa-solid fa-file"></i> document.pdf</a></p> 
+		  </div>	
+	  </div>
+	</div>
+</div>
